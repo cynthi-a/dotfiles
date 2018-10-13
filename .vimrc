@@ -46,6 +46,7 @@ set sidescroll=1
 " Filetype off is required by vundle
 filetype off
 
+" Make changes on the line below if you get an error because vundle#rc does not work! The path to the Vundle has to be correct.
 set rtp+=/Users/cynthialee/.vim/bundle/Vundle.vim
 call vundle#rc()
 
@@ -70,6 +71,7 @@ Plugin 'townk/vim-autoclose'
 Plugin 'tmhedberg/matchit'
 Plugin 'mxw/vim-jsx'
 Plugin 'alvan/vim-closetag'
+Plugin 'othree/xml.vim'
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml'
 let g:closetag_xhtml_filenames = '*.xhtml,*.jsx,*.js'
 let g:closetag_shortcut = '>'
@@ -92,6 +94,8 @@ filetype plugin indent on     " required!
 "
 " Color theme (drawing from altercation/vim-colors-solarized Bundle)
 syntax enable
+
+set equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
 
 colorscheme solarized
 set background=dark

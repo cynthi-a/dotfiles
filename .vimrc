@@ -47,7 +47,7 @@ set sidescroll=1
 filetype off
 
 " Make changes on the line below if you get an error because vundle#rc does not work! The path to the Vundle has to be correct.
-set rtp+=/Users/cynthialee/.vim/bundle/Vundle.vim
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#rc()
 
 " let Vundle manage Vundle (required)

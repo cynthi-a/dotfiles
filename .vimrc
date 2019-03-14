@@ -97,7 +97,7 @@ syntax enable
 
 set equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
 
-colorscheme solarized
+colorscheme murphy
 set background=dark
 set t_Co=256
 

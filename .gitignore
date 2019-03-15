@@ -1,6 +1,3 @@
-*
-!.gitignore
-!.vimrc
-!.tmux.conf
-*.swp
+.DS_Store
 *.swo
+*.swp

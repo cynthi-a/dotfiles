@@ -28,11 +28,17 @@ function installCask() {
 }
 
 installBrew tmux
+installBrew node
+installBrew yarn
 installCask whatsapp
 installCask telegram
 installCask spectacle
 installCask spotify
 installCask atom
+
+if [ ! -d "/Library/Developer/CommandLineTools" ]; then
+    xcode-select --install
+fi
 
 # Install Vim plugin manager
 echo "Setting up vim and tmux config...";

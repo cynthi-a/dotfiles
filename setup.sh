@@ -31,6 +31,7 @@ installBrew tmux
 installBrew node
 installBrew yarn
 installCask whatsapp
+installCask google-backup-and-sync
 installCask telegram
 installCask spectacle
 installCask spotify

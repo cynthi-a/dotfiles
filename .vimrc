@@ -95,8 +95,6 @@ filetype plugin indent on     " required!
 " Color theme (drawing from altercation/vim-colors-solarized Bundle)
 syntax enable
 
-set equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
-
 colorscheme murphy
 set background=dark
 set t_Co=256

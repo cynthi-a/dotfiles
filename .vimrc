@@ -104,11 +104,12 @@ set guifont=Monaco:h16
 
 set foldmethod=indent
 
-" NERDTree Mappings
+" NERDTree Configs
 " Open Nerd Tree with <Leader>n
 map <Leader>n <esc>:NERDTreeToggle<cr>
 " Reveal current file in NERDTree with <Leader>r
 map <Leader>r <esc>:NERDTreeFind<cr>
+let NERDTreeShowHidden=1
 
 imap ;; <Esc>
 

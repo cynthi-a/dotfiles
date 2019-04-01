@@ -35,7 +35,8 @@ installCask google-backup-and-sync
 installCask telegram
 installCask spectacle
 installCask spotify
-installCask atom
+installCask aws-vault
+installCask visual-studio-code
 
 if [ ! -d "/Library/Developer/CommandLineTools" ]; then
     xcode-select --install
@@ -51,7 +52,7 @@ fi
 git clone https://github.com/cynthi-a/dotfiles.git $TMPDIR/dotfiles
 cp $TMPDIR/dotfiles/.vimrc ~/.vimrc
 cp $TMPDIR/dotfiles/.tmux.conf ~/.tmux.conf
-cp $TMPDIR/dotfiles/.gitignore ~/.gitignore
+cp $TMPDIR/dotfiles/.gitignore ~/.gitignore_global
 echo "Setting up aliases..."
 cp $TMPDIR/dotfiles/.bashrc ~/.bashrc
 rm -rf $TMPDIR/dotfiles

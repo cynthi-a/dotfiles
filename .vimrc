@@ -1,6 +1,6 @@
 let mapleader=','
 
-set number relativenumber
+set number
 set backspace=indent,eol,start  "Allow backspace in insert mode
 set history=1000                "Store lots of :cmdline history
 set showcmd                     "Show incomplete cmds down the bottom
@@ -48,6 +48,8 @@ filetype off
 
 " Make changes on the line below if you get an error because vundle#rc does not work! The path to the Vundle has to be correct.
 set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=/usr/local/opt/fzf
+
 call vundle#rc()
 
 " let Vundle manage Vundle (required)

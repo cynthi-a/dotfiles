@@ -4,7 +4,10 @@ which -s brew
 if [[ $? != 0 ]] ; then
     echo "Installing homebrew..."
     sleep 1
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    echo '# Set PATH, MANPATH, etc., for Homebrew.' >> ~/.zprofile
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
 function installBrew() {
@@ -21,7 +24,7 @@ function installCask() {
     if [ ! -d "/usr/local/Caskroom/$1" ]; then
         echo "Installing $1..."
         sleep 1
-        brew cask install $1 
+        brew install --cask $1 
     else
       echo "$1 is already installed."
     fi
@@ -31,14 +34,10 @@ installBrew tmux
 installBrew node
 installBrew yarn
 installBrew zsh
-installBrew fxf
-installCask whatsapp
-installCask google-backup-and-sync
+installBrew fzf
 installCask telegram
 installCask spectacle
 installCask spotify
-installCask aws-vault
-installCask visual-studio-code
 installCask iterm2
 
 if [ ! -d "/Library/Developer/CommandLineTools" ]; then

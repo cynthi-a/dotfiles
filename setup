@@ -74,4 +74,7 @@ defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
 echo "Disable press and hold for VS Code"
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 
+echo "Install Oh My Zsh"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 echo "Done!"

@@ -39,6 +39,7 @@ installCask telegram
 installCask spectacle
 installCask spotify
 installCask iterm2
+installCask karabiner-elements
 
 if [ ! -d "/Library/Developer/CommandLineTools" ]; then
     xcode-select --install
